@@ -1,0 +1,44 @@
+{
+  "name": "lead-management-backend",
+  "version": "1.0.0",
+  "description": "This is a backend of lead management solution project",
+  "engines": {"node": "v14.x"},
+  "scripts": {
+    "start": "node ./src/server.js",
+    "server": "nodemon ./src/server.js",
+    "client": "npm start -- prefix client",
+    "build": "npm run clean && cp -r src dist",
+     "clean": "rm -rf dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kemnygh/lead-management-backend.git"
+  },
+  "keywords": [
+    "mern",
+    "project",
+    "lead",
+    "management",
+    "backend",
+    "api"
+  ],
+  "author": "kemnygh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kemnygh/lead-management-backend/issues"
+  },
+  "homepage": "https://github.com/Kemnygh/lead-management-backend#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.0",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
